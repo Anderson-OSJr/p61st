@@ -4,10 +4,13 @@ import Link from 'next/link';
 
 const Topnav = () => {
   return (
-    <div className= 'flex flex-row h-28  justify-between items-center shadow-lg'>
-        <div className='w-16 h-16 m-4 flex justify-center'>
+    <div className='flex flex-row h-28 justify-between items-center 
+                    shadow-lg rounded-md mx-1 mt-1
+                    border-2 border-indigo-100'>
+        <div className='w-16 h-16 m-4 flex 
+                        justify-center'>
            <Image 
-            src="/p61st_icon.jpg"
+            src="/sixone.png"
             width={50}
             height={50}
             alt="P61st Icon"
@@ -30,22 +33,22 @@ const Topnav = () => {
 
         <div className=''>
             <nav>
-                <ul className='text-blue-500 flex flex-col sm:flex-row sm:gap-10 mr-4 p-2 text-xl'>
-                    <li className='hover:text-blue-700'>
+                <ul className='text-indigo-500 flex flex-col sm:flex-row sm:gap-10 mr-4 p-2 text-base'>
+                    <li className='hover:text-indigo-700'>
                         <Link href='/'>
-                            Home
+                           <p className='drop-shadow-md'>Home</p>
                         </Link>
                     </li>
 
                     <li className='hover:text-blue-700'>
                         <Link href="/fte_adapt">
-                            FTE Adapt
+                            <p className='drop-shadow-md'>FTE Adapt</p>
                         </Link>
                     </li>
                     
                     <li className='hover:text-blue-700'>
                         <Link href="/links">
-                            Utilities
+                            <p className='drop-shadow-md'>Utilities</p>
                         </Link>
                     </li>
                    

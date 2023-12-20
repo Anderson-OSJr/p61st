@@ -1,8 +1,9 @@
+import MyHome from "@/components/main/MyHome"
 
 export default function Home() {
   return (
-    <>
-      <div>Home</div>
-    </>
+    <div className="">
+      <MyHome />
+    </div>
   )
 }
